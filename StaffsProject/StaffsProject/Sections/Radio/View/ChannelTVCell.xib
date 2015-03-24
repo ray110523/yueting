@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="channelTVCell" rowHeight="140" id="KGk-i7-Jjw" customClass="ChannelTVCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_tool_bgview.png" translatesAutoresizingMaskIntoConstraints="NO" id="zwA-Qb-to9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="zwA-Qb-to9" secondAttribute="height" multiplier="320:139" id="d6S-uN-epI"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BoardcastListCellMask.png" translatesAutoresizingMaskIntoConstraints="NO" id="UYp-Mv-Mlo">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="UYp-Mv-Mlo" secondAttribute="height" multiplier="1:1" id="Go5-bc-Dem"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPe-WE-s02">
+                        <rect key="frame" x="250" y="1" width="70" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="CwF-nU-45U"/>
+                            <constraint firstAttribute="height" constant="21" id="fNN-W4-Upx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UYp-Mv-Mlo" firstAttribute="leading" secondItem="zwA-Qb-to9" secondAttribute="leading" id="Aum-TK-Yss"/>
+                    <constraint firstItem="UYp-Mv-Mlo" firstAttribute="top" secondItem="zwA-Qb-to9" secondAttribute="top" id="Eo6-L7-Yy3"/>
+                    <constraint firstItem="UYp-Mv-Mlo" firstAttribute="bottom" secondItem="zwA-Qb-to9" secondAttribute="bottom" constant="1" id="FVA-Xb-N3y"/>
+                    <constraint firstItem="zwA-Qb-to9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MsO-gq-rga"/>
+                    <constraint firstItem="zwA-Qb-to9" firstAttribute="trailing" secondItem="aPe-WE-s02" secondAttribute="trailing" id="PAO-Ds-0f2"/>
+                    <constraint firstItem="zwA-Qb-to9" firstAttribute="top" secondItem="aPe-WE-s02" secondAttribute="top" constant="-1" id="VHs-wY-UdR"/>
+                    <constraint firstItem="zwA-Qb-to9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YkV-Pw-e6u"/>
+                    <constraint firstAttribute="trailing" secondItem="zwA-Qb-to9" secondAttribute="trailing" id="bzG-lv-RB1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bigImageView" destination="zwA-Qb-to9" id="bgo-RE-hgF"/>
+                <outlet property="dateLabel" destination="aPe-WE-s02" id="gl0-Ua-XgN"/>
+                <outlet property="halfImageView" destination="UYp-Mv-Mlo" id="J5S-2F-0wf"/>
+            </connections>
+            <point key="canvasLocation" x="249" y="196"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="BoardcastListCellMask.png" width="320" height="140"/>
+        <image name="bg_tool_bgview.png" width="360" height="160"/>
+    </resources>
+</document>
